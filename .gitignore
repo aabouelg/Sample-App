@@ -9,6 +9,9 @@
 /log/*.log
 /tmp
 
+# ignore personal subl workspace
+sample_app.sublime-workspace
+
 # Ignore other unneeded files.
 doc/
 *.swp
