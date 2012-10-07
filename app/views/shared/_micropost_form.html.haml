@@ -3,3 +3,5 @@
   .field
     = f.text_area :content, placeholder: "Compose new micropost...", rows: 3
   = f.submit "Post", class: "btn btn-large btn-primary" 
+  %span.pull-right#micropost_remaining
+    140

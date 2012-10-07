@@ -48,6 +48,13 @@ describe "StaticPages" do
           page.should have_selector("li##{item.id}", text: item.content)
         end
       end
+
+      it "should show the correct number of microposts" do
+        page.should have_content("2 microposts")
+        user.microposts.first.delete
+        visit root_path
+        page.should have_content("1 micropost")
+      end
     end
   end
 
